@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="text-align: center;">
+  <header>
+    <h1>Unit Converter</h1>
+  </header>
+<!--   <nav>
+    <ul>
+      <li><a href="#" class="tablink active" onclick="openTab(event, 'length')">Length</a></li>
+      <li><a href="#" class="tablink" onclick="openTab(event, 'temperature')">Temperature</a></li>
+      <li><a href="#" class="tablink" onclick="openTab(event, 'speed')">Speed</a></li>
+      <li><a href="#" class="tablink" onclick="openTab(event, 'weight')">Weight</a></li>
+    </ul>
+  </nav> -->
+  <div id="length" class="tabcontent">
+    <h2>Length Converter</h2>
+    <div class="converter">
+      <input type="number" id="length-input" placeholder="Enter value">
+      <select id="length-from">
+        <option value="meters">Meters</option>
+        <option value="kilometers">Kilometers</option>
+        <option value="inches">Inches</option>
+        <option value="feet">Feet</option>
+      </select>
+      <select id="length-to">
+        <option value="meters">Meters</option>
+        <option value="kilometers">Kilometers</option>
+        <option value="inches">Inches</option>
+        <option value="feet">Feet</option>
+      </select>
+      <button id="length-convert">Convert</button>
+      <input type="number" id="length-output" readonly>
+    </div>
+  </div>
+  <div id="temperature" class="tabcontent">
+    <h2>Temperature Converter</h2>
+    <div class="converter">
+      <input type="number" id="temperature-input" placeholder="Enter value">
+      <select id="temperature-from">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <select id="temperature-to">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <button id="temperature-convert">Convert</button>
+      <input type="number" id="temperature-output" readonly>
+    </div>
+  </div>
+  <div id="speed" class="tabcontent">
+    <h2>Speed Converter</h2>
+    <div class="converter">
+      <input type="number" id="speed-input" placeholder="Enter value">
+      <select id="speed-from">
+        <option value="meterspersecond">Meters per second</option>
+        <option value="kilometersperhour">Kilometers per hour</option>
+        <option value="milesperhour">Miles per hour</option>
+      </select>
+      <select id="speed-to">
+        <option value="meterspersecond">Meters per second</option>
+        <option value="kilometersperhour">Kilometers per hour</option>
+        <option value="milesperhour">Miles per hour</option>
+      </select>
+      <button id="speed-convert">Convert</button>
+      <input type="number" id="speed-output" readonly>
+    </div>
+  </div>
+  <div id="weight" class="tabcontent">
+    <h2>Weight Converter</h2>
+    <div class="converter">
+      <input type="number" id="weight-input" placeholder="Enter value">
+      <select id="weight-from">
+        <option value="grams">Grams</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="pounds">Pounds</option>
+        <option value="ounces">Ounces</option>
+      </select>
+      <select id="weight-to">
+        <option value="grams">Grams</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="pounds">Pounds</option>
+        <option value="ounces">Ounces</option>
+      </select>
+      <button id="weight-convert">Convert</button>
+      <input type="number" id="weight-output" readonly>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
